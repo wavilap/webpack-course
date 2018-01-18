@@ -24,8 +24,8 @@
     "build:postcss": "webpack --config ./15-postcss-loader/webpack.config.js",
     "build:prevent": "webpack --config ./16-prevent-duplication/webpack.config.js",
     "build:vendor": "webpack --config ./17-vendor/webpack.config.js",
-    "build:dll": "webpack --config ./17-dll/webpack.dll.config.js",
-    "build:dll:src": "webpack --config ./17-dll/webpack.config.js"
+    "build:dll": "webpack --config ./18-dll/webpack.dll.config.js",
+    "build:dll:src": "webpack --config ./18-dll/webpack.config.js"
   },
   "keywords": [],
   "author": "",

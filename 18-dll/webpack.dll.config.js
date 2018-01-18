@@ -4,16 +4,15 @@ const webpack = require('webpack');
 
 module.exports = {
 	entry: {
-		vendor: [
+		modules: [
 			'react',
 			'react-dom'
 		],
-		home: path.resolve(__dirname, 'src/js/index.js'),
-		contact: path.resolve(__dirname, 'src/js/contact.js')
 	},
 	output: {
 		path: path.resolve(__dirname, 'dist'),
-		filename: '[name].js'
+		filename: '[name].js',
+		library: '[name]'
 	},
 	// module: {
 	// 	rules: [
@@ -114,12 +113,6 @@ module.exports = {
 	// 	]
 	// },
 	plugins: [
-		// aquí van los plugins
-		// new ExtractTextPlugin('css/[name].css'),
-		// new webpack.optimize.CommonsChunkPlugin({
-		// 	name: 'vendor',
-		// 	minChunks: Infinity
-		// })
 		new webpack.DllPlugin({
 			name: '[name]',
 			path: path.join(__dirname, '[name]-manifest.json')
