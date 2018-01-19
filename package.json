@@ -25,7 +25,7 @@
     "build:prevent": "webpack --config ./16-prevent-duplication/webpack.config.js",
     "build:vendor": "webpack --config ./17-vendor/webpack.config.js",
     "build:dll": "webpack --config ./18-dll/webpack.dll.config.js",
-    "build:dll:src": "webpack --config ./18-dll/webpack.config.js"
+    "build:dynamic": "webpack --config ./19-dynamic-imports/webpack.config.js"
   },
   "keywords": [],
   "author": "",
@@ -33,6 +33,7 @@
   "devDependencies": {
     "babel-core": "6.26.0",
     "babel-loader": "7.1.2",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "babel-preset-es2015": "6.24.1",
     "babel-preset-es2016": "6.24.1",
     "babel-preset-react": "^6.24.1",
